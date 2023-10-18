@@ -1,0 +1,16 @@
+.money-heist-info {
+  margin-left: -45px;
+}
+
+.movie-explanation {
+  position: relative;
+  top: 70px;
+  width: 400px;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+.buttons {
+  position: relative;
+  top: 23px;
+}
