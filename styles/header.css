@@ -21,6 +21,10 @@ margin-right: 45%;
   margin-top: -2px;
 }
 
+.netfilx-logo:hover {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }
@@ -30,12 +34,29 @@ ul {
   display: flex;
   margin:0;
   padding:0;
-  font-size: 14px;
 }
 
 .navigation-tab {
   margin-right: 20px;
   color: gainsboro;  
+}
+
+@media (max-width: 750px) {
+  .navigation-tab {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .navigation-tab {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navigation-tab {
+    font-size: 14px;
+  }
 }
 
 .navigation-tab:hover {
@@ -54,5 +75,10 @@ ul {
   opacity: 0.5;
   transition: opacity 0.15s;
   cursor: pointer;
+  animation: round 1s ;
+}
+
+@keyframes round {
+  
 }
 

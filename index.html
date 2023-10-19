@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="styles/infos.css">
 </head>
 <body>
+
   <header class="header">
     <div class="left-section">
-      <img class="netfilx-logo" src="images/Logonetflix.png">
+      <img class="netfilx-logo" src="images/Logonetflix.png" a href="index.html">
     </div>
     <!--이 메뉴바부분 넷플릭스는 줄이다가 아예 메뉴로 만들어버리던데 나도 그렇게 구현할 수는 없을까... 창 크기 줄어들면 줄바꿈 되는거 신경쓰임-->
     <div class="middle-section">
@@ -53,12 +54,13 @@
   </div>
 
 <main>
-  <div class="tooltip">
-  <h3 class="popular-contents1">넷플릭스 인기 콘텐츠</h3>
-  <div class="toggle1">>모두 보기</div>
-</div>
+  <!--이 부분 넷플릭스는 아무리 화면이 커져도 글자가 포스터를 따라가는데 나는 구현하지 못하겠다. 좋은 아이디어가 없을까? 결국 미디어 쿼리로 화면 가로 길이에 따라 움직이는 것으로 일시적 해결을 했지만 추후에는 더 세련되게 대응할 수 있고 싶다.-->
+  <section class="section-grid">
+    <div class="tooltip">
+       <h3 class="popular-contents1">넷플릭스 인기 콘텐츠</h3>
+        <div class="toggle1">>모두 보기</div>
+    </div>
   <section class="video-grid">
-    
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="images/001.jpg">
@@ -81,7 +83,7 @@
         <img class="thumbnail" src="images/004.jpg">
       </div>
     </div>
-    
+
     
     <div class="video-preview">
       <div class="thumbnail-row">
@@ -106,8 +108,10 @@
         <img class="thumbnail" src="images/008.jpg">
       </div>
     </div>
+  </section>
 </section>
 
+<section class="section-grid">
 <div class="tooltip">
 <h3 class="popular-contents1">지금 뜨는 콘텐츠</h3>
 <div class="toggle2">>모두 보기</div>
@@ -161,7 +165,7 @@
       </div>
     </div>
   </section> 
-  
+</section>
 </main>
 
 

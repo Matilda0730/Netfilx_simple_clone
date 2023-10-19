@@ -2,8 +2,8 @@ main {
   margin-top: 13%;
 }
 
+
 .video-grid {
-  display: flex;
   display: grid;
   column-gap: 16px;
   row-gap: 40px;
@@ -92,3 +92,40 @@ main {
 .video-grid:nth-of-type(2) {
   margin-top: 30px;
 }
+
+.section-grid {
+  position: relative;
+  margin-left: 10px;
+}
+
+@media (max-width: 1380px) {
+  .tooltip {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1381px) and (max-width: 2000px) {
+  .tooltip {
+    animation: moveRight01 1s ease-in-out forwards;
+  }
+}
+
+@keyframes moveRight01 {
+  to {
+    transform: translate(10%, 10%)
+  }
+}
+
+@media (min-width: 2001px) {
+  .tooltip {
+    animation: moveRight 1s ease-in-out forwards;
+  }
+}
+
+@keyframes moveRight {
+  to {
+    transform: translateX(20%);
+  }
+}
+
+
