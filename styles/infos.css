@@ -1,16 +1,42 @@
 .money-heist-info {
-  margin-left: -45px;
+  margin-left: -12px;
 }
 
 .movie-explanation {
   position: relative;
   top: 70px;
-  width: 400px;
+  width: 350px;
   word-wrap: break-word;
   font-size: 14px;
+}
+
+.play-button, .info-button {
+  width: 130px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
 }
 
 .buttons {
   position: relative;
   top: 23px;
+  align-items: center;
+}
+
+.play-button {
+ background-color: white;
+ color: black;
+}
+
+.info-button {
+  margin-left: 10px;
+  background-color: rgba(127,127,127,0.5);
+  color:white
+}
+
+.play-button:hover 
+, .info-button:hover {
+  transform: scale(1.2);
+  transition-duration: 0.20s;
+  cursor: pointer;
 }
